@@ -42,3 +42,18 @@ class SolrClient:
             raise SolrException(response)
 
         return response
+
+    def get(self, path: str, **kwargs) -> SolrResponse:
+        return self.request("GET", path, **kwargs)
+
+    def post(self, path: str, **kwargs) -> SolrResponse:
+        return self.request("POST", path, **kwargs)
+
+    def put(self, path: str, **kwargs) -> SolrResponse:
+        return self.request("PUT", path, **kwargs)
+
+    def delete(self, path: str, **kwargs) -> SolrResponse:
+        return self.request("DELETE", path, **kwargs)
+
+    def head(self, path: str, **kwargs) -> SolrResponse:
+        return self.request("HEAD", path, **kwargs)

@@ -15,6 +15,7 @@ pyhumps = "^3.8.0"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.286"
 pytest = "^7.4.0"
+ipykernel = "^6.25.2"
 
 [build-system]
 requires = ["poetry-core"]
